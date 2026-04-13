@@ -69,6 +69,10 @@ NyxShield/
 - help  
 - exit  
 
+## 🎬 Video Presentation
+
+Watch the code walkthrough and demo on YouTube: [NyxShield Presentation](https://youtu.be/_rbfv1TizoE)
+
 ---
 
 ## 🔊 Audio Feature (Optional)
