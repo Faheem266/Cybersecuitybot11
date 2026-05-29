@@ -1,0 +1,13 @@
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.log
+*.pdb
+*.exe
+*.dll
+*.cache
+*.userosscache
+*.ncrunch*
+Thumbs.db
