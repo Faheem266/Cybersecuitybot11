@@ -74,4 +74,8 @@ Free for educational use.
 
 ---
 
+## Video presentation
+
+- [NyxShield Cybersecurity Chatbot video presentation part 2](https://youtu.be/J15ueORE-8E)
+
 Created and maintained as part of the NyxShield Cybersecurity Chatbot project.
