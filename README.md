@@ -1,11 +1,11 @@
-# NyxShield Cybersecurity Chatbot
+# NyxShield Cybersecurity Awareness Chatbot
 
-NyxShield is a C# console-based chatbot designed to educate users about cybersecurity while providing an interactive and personalized experience.
+NyxShield is a C# WPF chatbot designed to educate users about cybersecurity while providing an interactive and personalized experience.
 
 ## Features
 
 - Personalized interaction (uses your name)
-- Interactive chatbot with real-time responses
+- GUI-based chatbot with real-time responses
 - Cybersecurity education:
   - Password safety
   - Phishing awareness
@@ -13,23 +13,26 @@ NyxShield is a C# console-based chatbot designed to educate users about cybersec
   - VPN usage
   - Two-Factor Authentication (2FA)
   - Safe browsing tips
-- ASCII art logo display
-- Typewriter-style text effect
-- Optional audio greeting (Windows only)
-- Simple WPF interface included in the repository
+- Task assistant for cybersecurity-related tasks
+- Reminder support for tasks
+- Persistent task storage using a local JSON database file
+- 10-question cybersecurity mini-game quiz with scoring and feedback
+- NLP-style command recognition for task, reminder, quiz, and log requests
+- Activity log showing the last 10 significant chatbot actions
+- WPF tabs for Chat, Tasks, Quiz, and Activity Log
 
 ## Project Structure
 
 The project contains a WPF front-end and supporting chatbot logic:
 
 NyxShield/
-- Program.cs (entry point)
 - ChatBot.cs (main chatbot logic)
 - MemoryStore.cs (user data model)
 - KeywordResponder.cs (keyword-based replies)
 - SentimentDetector.cs (simple sentiment/responses)
+- CyberTask.cs / TaskManager.cs (task and reminder logic)
+- QuizQuestion.cs / QuizManager.cs (quiz mini-game logic)
 - MainWindow.xaml / MainWindow.xaml.cs (WPF UI)
-- greeting.wav (optional audio file)
 
 > Note: Filenames in your workspace may vary slightly; check the project root for actual file names.
 
@@ -46,26 +49,22 @@ NyxShield/
 
 ## Example commands
 
-- hello
 - what is phishing
-- how to create a strong password
-- tips
+- add task - Review privacy settings
+- remind me to update my password tomorrow
+- view tasks
+- complete task 1
+- start quiz
+- answer 2
+- show activity log
 - help
 - exit
-
-## Optional audio greeting
-
-To enable the audio greeting on Windows:
-
-1. Add a `greeting.wav` file to the project root.
-2. Install the Windows extensions package: `dotnet add package System.Windows.Extensions`.
-3. Target a windows TFM if required for audio: `<TargetFramework>net10.0-windows</TargetFramework>` in the project file.
 
 ## Future improvements
 
 - AI-powered responses
-- Save chat history
-- GUI improvements and accessibility
+- MySQL-backed task storage when a MySQL server and connector package are available
+- Export activity logs
 - Voice interaction
 
 ## License
